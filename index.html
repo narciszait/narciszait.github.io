@@ -1,1 +1,82 @@
-Hello World
+  <!-- Code should be so expressive that comment should not be needed to understand the code -->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript exercises</title>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+<body>
+  <div id="wrapper">
+       <div id="task1">
+         <h2>Task 1</h2>
+            <div id="form1">
+             <form name='task1'> 
+             Birth Year:
+             <input type="text" name="birthYearA" id="birthYear">
+             <br>
+             Current Year:
+             <input type="text" name="currentYearA" id='currentYear'> <br />
+             <button id="button1"  onClick='calculateAge(document.getElementById("birthYear").value,document.getElementById("currentYear").value);'> Calculate </button> 
+              <button id="button2"  onClick='showCurrentYear(document.getElementById("birthYear").value);'> Calculate with JavaScript year value </button>
+             </form>
+           </div>
+       </div>
+   
+       <div id="task2">
+           <h2>Task 2</h2>
+            <div id="form2">
+             <form name='task3'> 
+             Amount: 
+             <input type="text" name="amount" id="amount">
+             <br>
+             Age:
+              <input type="text" name="age" id="age">
+              <br>
+             <button  id="button1" onClick='calculateSupply(document.getElementById("age").value, document.getElementById("amount").value,null);'> Calculate </button>
+              <button id="button2" onClick='calculateSupply(document.getElementById("age").value, document.getElementById("amount").value,1);'> Round it </button>
+             </form>
+           </div>
+       </div>
+
+       <div id="task3">
+           <h2>Task 3</h2>
+            <div id="form3">
+             <form name='task3'> 
+             Radius: 
+             <input type="text" name="radius" id="radius">
+              <br>
+             <button id="button1"  onClick='calcCircumfrence(document.getElementById("radius").value);'> Calculate circumference </button>
+              <button id="button2"  onClick='calcArea(document.getElementById("radius").value);'> Calculate Area </button>
+             </form>
+           </div>
+       </div>
+
+       <div id="task4">
+         <h2>Task 4</h2>
+            <div id="form4">
+             <form name='task4'> 
+             °F:
+             <input type="text" name="fahrenheit" id="fahrenheit">
+             <br>
+             °C:
+             <input type="text" name="celsius" id='celsius'>
+             <br>
+             <button id="button1"  onClick=' if(!document.getElementById("fahrenheit").value){
+                                                                   alert("sorry");}
+                                                              else{            
+                                                                    fahrenheitToCelsius(document.getElementById("celsius").value, document.getElementById("fahrenheit").value);
+               }'> Fahrenheit to Celsius </button> 
+              <button id="button2"  onClick=' if(!document.getElementById("celsius").value){
+                                                                    alert("sorry");}
+                                                                else{
+                                                                    celsiusToFahrenheit(document.getElementById("celsius").value, document.getElementById("fahrenheit").value);
+              }'> Celsius to Fahrenheit </button>
+             </form>
+           </div>
+         </div>
+       </div>
+</body>
+</html>
