@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "1351197006.com.scripin.scripinwedding",
+        "paths": [ "/events/code/*"]
+      }
+    ]
+  }
+}
