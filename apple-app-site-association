@@ -1,11 +1,5 @@
 {
-  "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "NMBFX4TJ39.1351197006.com.scripin.scripinweddings",
-        "paths": [ "/events/code/*"]
+  "appclips": {
+          "apps": ["BZN8CFPRK6.com.narcis.fruta.Clip"]
       }
-    ]
-  }
 }
